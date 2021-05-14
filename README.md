@@ -6,7 +6,7 @@ Xufei Li
 
 # Abstract
 
-The goal of this project is to help a bank institution build a classification model to predict potential customers who’s going to subscribe to “Term Deposit”.  Then, the institution will apply direct marketing campaigns(phone calls) to the Marketing Targets. I used data from Kaggle-Banking dataset, then started with a baseline Logistic Regression model F-beta(beta = 2): 0.7582, ROC_AUC: 0.6502. Then adding complexity to improve the prediction ability. I trained 6 candidate models and selected the best performed one-XGBoost. Then, I retrained the model to get my final model with `F-beta(beta = 2): 0.9946, ROC_AUC: 0.9998`.
+The goal of this project is to help a bank institution build a classification model to predict potential customers who’s going to subscribe to “Term Deposit”.  Then, the institution will apply direct marketing campaigns(phone calls) to the Marketing Targets. I used data from Kaggle-Banking dataset, then started with a baseline Logistic Regression model `F-beta(beta = 2): 0.7582, ROC_AUC: 0.6502`. Then adding complexity to improve the prediction ability. I trained 6 candidate models and selected the best performed one-XGBoost. Then, I retrained the model to get my final model with `F-beta(beta = 2): 0.9946, ROC_AUC: 0.9998`.
 
 # Design/Metric Choosing
 
