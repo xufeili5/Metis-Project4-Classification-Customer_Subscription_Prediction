@@ -28,15 +28,22 @@ Logistic Regression, k-nearest neighbors(20-NN), Random Forest, XGBoost, Naive B
 I splitted the train.csv into a training & validation set. Then train on training and get the score on validation. Below is the comparison among different models. 
 
 Model Evaluation & Selection: 
-Logistic Regression:          F-beta: 0.7933           ROC_AUC: 0.7687
-20-NN:                        F-beta: 0.7632           ROC_AUC: 0.7392
-Random Forest:                F-beta: 0.8333           ROC_AUC: 0.7928
-XGBoost:                      F-beta: 0.8329           ROC_AUC: 0.7992
-Naive Bayes:                  F-beta: 0.8016           ROC_AUC:  0.7487
-SVM:                          F-beta: 0.8388           ROC_AUC: N/A
+
+Logistic Regression:          F-beta: 0.7933           ROC_AUC: 0.7687;
+
+20-NN:                        F-beta: 0.7632           ROC_AUC: 0.7392;
+
+Random Forest:                F-beta: 0.8333           ROC_AUC: 0.7928;
+
+XGBoost:                      F-beta: 0.8329           ROC_AUC: 0.7992;
+
+Naive Bayes:                  F-beta: 0.8016           ROC_AUC:  0.7487;
+
+SVM:                          F-beta: 0.8388           ROC_AUC: N/A;
 
 XGBoost performs the best. So, I tuned the hyperparameter to get a better predictive power. Then retrain my model based on (train+validation), then score on the test set. 
 Final score(on test):  
+
 Final XGBoost:                F-beta: 0.9946             ROC_AUC: 0.9998
 
 Tools
