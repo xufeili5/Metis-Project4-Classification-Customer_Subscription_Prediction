@@ -65,4 +65,10 @@ ROC_AUC: 0.9998
 
 # Conclusion & Future work
 
-In order to build a robust model, I will go back to check my code settings to make sure everything has been set up correctly and then try the second candidate model(Random Forest) as well to compare results. I can try different random_state to see if I will get a higher validation score on all of my candidate models. Further on, SVM performs pretty good as well on F-beta score, so I can also tune hyperparameters for SVM to see if it can be a good predictor for our clients' problem as well. 
+1. Check feature importance to make sure the top predictors aren’t leaking information.
+
+2. Try different random_state to see if I can get a higher validation score on all of my candidate models.
+
+3. Try refit entire data on Random Forest to see the performance.
+
+4. Lastly, as SVM was with a similar F-beta score with my 2 tree based models, I can try to improve my SVM model to see if it can get a similar performance as XGBoost.
